@@ -45,6 +45,7 @@
 	<build>
 		<finalName>container</finalName>
 		<plugins>
+			<plugin>
 			<artifactId>maven-surefire-plugin</artifactId>
 			<version>2.22.2</version>
 			<dependencies>
@@ -59,6 +60,7 @@
 					<version>5.8.2</version>
 				</dependency>						
 			</dependencies>
+			</plugin>
 		</plugins>
 	</build>
 		
