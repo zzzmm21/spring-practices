@@ -4,16 +4,19 @@
 	<artifactId>spring-practices</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<modules>
-		<module>helloweb03</module>
-		<module>emaillist03</module>
-		<module>guestbook03</module>
-		<module>logex</module>
-		<module>fileupload</module>
-		<module>aoptest</module>
-		<module>container</module>
-	</modules>
-	
+	<profiles>
+		<profile>
+			<modules>
+				<module>helloweb03</module>
+				<module>emaillist03</module>
+				<module>guestbook03</module>
+				<module>logex</module>
+				<module>fileupload</module>
+				<module>aoptest</module>
+				<module>container</module>
+			</modules>
+		</profile>
+	</profiles>
 	<build>
 		<plugins>
 			<plugin>
@@ -24,7 +27,7 @@
 					<url>${tomcat.deploy.url}</url>
 					<server>tomcat-bitacademy</server>
 				</configuration>
-			</plugin>			
-		</plugins>	
-	</build>	
+			</plugin>
+		</plugins>
+	</build>
 </project>
