@@ -7,7 +7,7 @@
 	</parent>
 	<artifactId>container</artifactId>
 	<packaging>jar</packaging>
-	
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.build.outputEncoding>UTF-8</project.build.outputEncoding>
@@ -23,7 +23,7 @@
 			<artifactId>spring-context</artifactId>
 			<version>${org.springframework-version}</version>
 		</dependency>
-		
+
 		<!-- Spring Test -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -31,7 +31,7 @@
 			<version>${org.springframework-version}</version>
 			<scope>test</scope>
 		</dependency>
-		
+
 		<!-- jUnit5(jupiter) -->
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
@@ -39,9 +39,9 @@
 			<version>5.8.2</version>
 			<scope>test</scope>
 		</dependency>
-				
+
 	</dependencies>
-	
+
 	<build>
 		<finalName>container</finalName>
 		<plugins>
@@ -58,10 +58,10 @@
 						<groupId>org.junit.jupiter</groupId>
 						<artifactId>junit-jupiter-engine</artifactId>
 						<version>5.8.2</version>
-					</dependency>						
+					</dependency>
 				</dependencies>
-			</plugin>	
+			</plugin>
 		</plugins>
 	</build>
-		
+
 </project>
